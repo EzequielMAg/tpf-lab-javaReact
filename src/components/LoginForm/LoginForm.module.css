@@ -1,10 +1,19 @@
-.login-page {
+.login-form {
 	display: flex;
 	justify-content: center;
 	margin-top: 3.5rem;
 	background-position: bottom;
 	/* background-image: url('./../../../../../assets/images/patron-prueba6.png'); */
-	color: white;
+}
+
+.loading{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+	font-size: 2rem;
 }
 
 #login-form {

@@ -1,21 +1,18 @@
+import { useState } from 'react';
 import useForm from '../../hooks/useForm';
 import styles from './LoginPage.module.css';
-import PropTypes from 'prop-types';
 
 const LoginPage = () => {
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [formState, onInputChange, hadleSubmit] = useForm({ email: '', password: ''});
+  const {formState, onInputChange, handleSubmit} = useForm({ email: '', password: ''});
   
   if(loading) return <div>Loading...</div>;
 
   return (
     <div className={ styles['login-page'] }>
-      <form id="login-form" autoComplete="off" onSubmit={ handledSubmit() }>
-        <div className={ styles.logo }>
-          {/* <img src="./../../../../../assets/images/logo-sin-nombre.png" alt=""> */}
-        </div>
+      <form id={ styles['login-form'] } autoComplete="off" onSubmit={ handleSubmit(() =>  console.log('Formulario enviado')) }>
 
         <h4>Iniciá sesión</h4>
 
@@ -30,6 +27,8 @@ const LoginPage = () => {
               placeholder="Ingresá tu email" 
               required 
               autoComplete="username" 
+              value= { formState.email }
+              onChange= { onInputChange }
             />
           </div>
 
@@ -42,6 +41,8 @@ const LoginPage = () => {
               placeholder="Ingresá tu contraseña" 
               required 
               autoComplete="current-password" 
+              value= { formState.password }
+              onChange= { onInputChange }
             />
 
             <div className={ styles['for-got-password'] }>
@@ -60,7 +61,5 @@ const LoginPage = () => {
 
   );
 };
-
-LoginPage.propTypes = {};
 
 export default LoginPage;

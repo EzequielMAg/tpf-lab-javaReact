@@ -7,7 +7,7 @@ const useForm = ( initialForm = {} ) => {
   const onInputChange = ( event ) => {
     const { name, value } = event.target;
     setFormState((prevState) => ({ ...prevState, [name]: value }));
-    console.log(name, value);
+    //console.log(name, value);
   }
 
   const onResetForm = () => {
@@ -18,7 +18,7 @@ const useForm = ( initialForm = {} ) => {
     return (event) => {
       event.preventDefault()
       callback();
-      console.log(formState);
+      //console.log(formState);
     };
   };
 

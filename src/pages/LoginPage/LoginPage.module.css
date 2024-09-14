@@ -4,6 +4,12 @@
 	margin-top: 3.5rem;
 	background-position: bottom;
 	/* background-image: url('./../../../../../assets/images/patron-prueba6.png'); */
+	color: white;
+}
+
+#login-form {
+	background-color: var(--secondary-color);
+	opacity: .9;
 }
 
 form {
@@ -12,23 +18,13 @@ form {
 	/* background-color: rgba(255, 255, 255); */
 }
 
-.logo {
-	padding-top: .5rem;
-	text-align: center;
-}
-
-.logo img {
-	width: auto;
-	height: 5rem;
-}
-
 form h4 {
 	text-align: center;
-	margin: 0;
+	margin: 2rem;
 }
 
 .form-content {
-	padding: 1.9rem;
+	margin: 1.5rem 3rem 3rem 3rem;
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
@@ -72,14 +68,14 @@ form h4 {
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
-	background-color: rgb(255, 127, 31);
+	background-color: var(--tertiary-color);
 	width: 100%;
 	cursor: pointer;
 }
 
 .for-got-password a,
 .open-account a {
-	color: rgb(255, 127, 31);
+	color: var(--quaternary-color);
 }
 
 .incorrect-input-message {

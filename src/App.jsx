@@ -1,15 +1,11 @@
-import { useState } from 'react'
-import HomePage from './pages/HomePage/HomePage'
-import { LoginPage } from './pages/LoginPage'
-//import './App.css'
+import { HomePage, LoginPage } from './pages'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <LoginPage />
-      <HomePage />
+      {/* <HomePage /> */}
     </>
   )
 }

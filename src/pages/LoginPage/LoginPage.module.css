@@ -1,0 +1,91 @@
+.login-page {
+	display: flex;
+	justify-content: center;
+	margin-top: 3.5rem;
+	background-position: bottom;
+	/* background-image: url('./../../../../../assets/images/patron-prueba6.png'); */
+}
+
+form {
+	margin: 2rem 0;
+	border-radius: 1rem;
+	/* background-color: rgba(255, 255, 255); */
+}
+
+.logo {
+	padding-top: .5rem;
+	text-align: center;
+}
+
+.logo img {
+	width: auto;
+	height: 5rem;
+}
+
+form h4 {
+	text-align: center;
+	margin: 0;
+}
+
+.form-content {
+	padding: 1.9rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+/* ------  FORM GROUP  ------ */
+.form-group {
+  margin-bottom: 1rem; /* Espacio entre los grupos de formularios */
+}
+  
+.form-group label {
+	font-weight: bold;
+	margin-bottom: 0.3rem; /* Espacio entre la etiqueta y el input */
+}
+ 
+.form-group input {
+	background-color: rgb(245, 245, 245);
+	width: 100%; /* Asegura que los campos ocupen el ancho completo del contenedor */
+	padding: 0.5rem; /* Espaciado interno del input */
+	border: 1px solid #ced4da; /* Bordes similares a los de Bootstrap */
+	border-radius: 4px; /* Bordes redondeados */
+	font-size: 1rem; /* Tamaño de fuente */
+}
+  
+.form-group input:focus {
+	border-color: #80bdff; /* Cambia el color del borde al enfocar */
+	outline: none; /* Quita el borde por defecto de focus */
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra azul al enfocar, similar a Bootstrap */
+}
+
+.for-got-password {
+  margin-top: 0.2rem;
+	text-align: end;
+}
+
+.btn {
+	border: none;
+	color: white;
+	text-decoration: none;
+	padding: 0.8rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: rgb(255, 127, 31);
+	width: 100%;
+	cursor: pointer;
+}
+
+.for-got-password a,
+.open-account a {
+	color: rgb(255, 127, 31);
+}
+
+.incorrect-input-message {
+	color: red;
+	margin: .1rem 0 0 0;
+	font-size: .8rem;
+	font-weight: bold;
+}
+

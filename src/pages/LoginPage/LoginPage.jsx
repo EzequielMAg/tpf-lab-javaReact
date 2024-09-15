@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import useForm from '../../hooks/useForm';
-import LoginForm from '../../components/LoginForm/LoginForm';
+import { useForm } from '../../hooks';
+import { LoginForm } from '../../components';
 
 const LoginPage = ({ onLogin }) => {
 

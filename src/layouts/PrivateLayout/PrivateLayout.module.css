@@ -1,0 +1,22 @@
+.private-layout {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 1fr;
+	min-height: 100vh;
+}
+
+header {
+	background-color: #333;
+	padding: 1rem;
+	text-align: center;
+}
+
+main {
+	padding: 2rem;
+}
+
+footer {
+	background-color: #34495e;
+	padding: 1rem;
+	text-align: center;
+}

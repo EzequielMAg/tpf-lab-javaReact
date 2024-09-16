@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import { EmployeePage, HomePage, LoginPage, RegisterPage } from '../pages'
 import { PrivateLayout, PublicLayout } from '../layouts';
-import PrivateRoute from './PrivateRoute';                   
+import PrivateRoute from './PrivateRoute';
+import NotFoundPage from '../pages/NotFoundPage/NotFoundPage';
 
 const AppRouter = () => {
   return (
@@ -44,6 +45,15 @@ const AppRouter = () => {
                 <EmployeePage />
               </PrivateLayout>
             </PrivateRoute>
+          }
+        />
+
+        <Route
+          path='*'
+          element={
+              <PublicLayout>
+                <NotFoundPage />
+              </PublicLayout>
           }
         />
       </Routes>

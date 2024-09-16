@@ -1,7 +1,7 @@
 import styles from './LoginForm.module.css';
 
 const LoginForm = ({ isLoading, handleSubmit, formState, onInputChange, error }) => {
-	if(isLoading) return <div className={ styles.loading }>Loading...</div>;
+	if(isLoading) return <div className={ styles.loading }>Loading...</div>;  //TODO: refactorizar creando un componente spinner
 
   return (
     <div className={ styles['login-form'] }>

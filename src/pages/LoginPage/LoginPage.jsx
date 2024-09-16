@@ -1,27 +1,30 @@
 import { useState } from 'react';
-import { useForm } from '../../hooks';
+import { useAuth, useForm } from '../../hooks';
 import { LoginForm } from '../../components';
+import { Navigate, useNavigate } from 'react-router-dom';
 
-const LoginPage = ({ onLogin }) => {
-
-  const {formState, onInputChange, handleSubmit} = useForm({ email: '', password: ''});
-  const [isLoading, setIsLoading] = useState(false);
+const LoginPage = () => {
   const [error, setError] = useState('');
 
-  const submitForm = (event) => {
-    setIsLoading(true);
+  const {isLoading, isLoggedIn, login} = useAuth();
+  const {formState, onInputChange, handleSubmit} = useForm({ email: '', password: ''});
+  const navigate = useNavigate();
 
-    // SIMULANDO PETICION A UN SERVIDOR
-    setTimeout(() => {
-      console.log(`Email: ${ formState.email }, Password: ${ formState.password } `);
-      setIsLoading(false);
-      onLogin();
-    }, 2000);
+  const submitForm = async (event) => {
+    console.log(`Email: ${ formState.email }, Password: ${ formState.password } `);
+    
+    // SIMULANDO PETICION A UN SERVIDORx
+    await login();
+
+    navigate('/home');
   }
+
+  if(isLoggedIn) return <Navigate to='/home' />
+
 
   return (
     <LoginForm 
-      isLoading={ isLoading } 
+      isLoading={ isLoading }
       handleSubmit={ handleSubmit(submitForm)} 
       formState={ formState }
       onInputChange={ onInputChange }

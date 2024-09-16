@@ -1,9 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { EmployeePage, HomePage, LoginPage, RegisterPage } from '../pages'
+import { EmployeeListPage, EmployeePage, HomePage, LoginPage, NotFoundPage, RegisterPage } from '../pages'
 import { PrivateLayout, PublicLayout } from '../layouts';
 import PrivateRoute from './PrivateRoute';
-import NotFoundPage from '../pages/NotFoundPage/NotFoundPage';
 
 const AppRouter = () => {
   return (
@@ -42,18 +41,30 @@ const AppRouter = () => {
           element={
             <PrivateRoute>
               <PrivateLayout>
-                <EmployeePage />
+                <EmployeeListPage />
               </PrivateLayout>
             </PrivateRoute>
           }
-        />
+        >
+
+          <Route
+            path='/employee/:id'
+            element={
+              <PrivateRoute>
+                <PrivateLayout>
+                  <EmployeePage />
+                </PrivateLayout>
+              </PrivateRoute>
+            }
+          />
+        </Route>
 
         <Route
           path='*'
           element={
-              <PublicLayout>
-                <NotFoundPage />
-              </PublicLayout>
+            <PublicLayout>
+              <NotFoundPage />
+            </PublicLayout>
           }
         />
       </Routes>
@@ -62,16 +73,3 @@ const AppRouter = () => {
 }
 
 export default AppRouter;
-
-
-
-
-
-
-
-
-
-
-
-
-

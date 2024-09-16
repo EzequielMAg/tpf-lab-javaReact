@@ -1,16 +1,17 @@
-"use client";
-import React from 'react';
 import styles from './EmployeePage.module.css';
-import PropTypes from 'prop-types';
+import { useParams } from 'react-router-dom';
 
 const EmployeePage = ({}) => {
+	const { id } = useParams();
+
 	return (
 		<div className={styles.employeepage}>
- 			EmployeePage works!
+ 			<h2>PAGINA DEL USUARIO</h2>
+			<br />
+			<p>Mostrando informacion del usuario con ID: { id }</p>
  		</div>
 	);
 };
 
-EmployeePage.propTypes = {};
 
 export default EmployeePage;

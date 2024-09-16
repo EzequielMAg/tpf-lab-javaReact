@@ -69,7 +69,7 @@ form h4 {
 	text-align: end;
 }
 
-.btn {
+.btn {	/* TODO: modulariza */
 	border: none;
 	color: white;
 	text-decoration: none;

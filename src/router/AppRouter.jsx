@@ -8,67 +8,22 @@ const AppRouter = () => {
   return (
     <Router>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <PublicLayout>
-              <LoginPage />
-            </PublicLayout>
-          }
-        />
-
-        <Route
-          path='/register'
-          element={
-            <PublicLayout>
-              <RegisterPage />
-            </PublicLayout>}
-        />
-
-        <Route
-          path='/home'
-          element={
-            <PrivateRoute>
-              <PrivateLayout>
-                <HomePage />
-              </PrivateLayout>
-            </PrivateRoute>
-          }
-        />
-
-        <Route
-          path='/employee'
-          element={
-            <PrivateRoute>
-              <PrivateLayout>
-                <EmployeeListPage />
-              </PrivateLayout>
-            </PrivateRoute>
-          }
-        >
-
-          <Route
-            path='/employee/:id'
-            element={
-              <PrivateRoute>
-                <PrivateLayout>
-                  <EmployeePage />
-                </PrivateLayout>
-              </PrivateRoute>
-            }
-          />
+        {/* -----------  RUTAS PUBLICAS  -----------*/}
+        <Route path="/" element={<PublicLayout />} >
+          <Route path="/" element={<LoginPage />} />
+          <Route path='/register' element={<RegisterPage />} />
+          <Route path='*' element={<NotFoundPage />} />
         </Route>
 
-        <Route
-          path='*'
-          element={
-            <PublicLayout>
-              <NotFoundPage />
-            </PublicLayout>
-          }
-        />
+        {/* -----------  RUTAS PRIVADAS  -----------*/}
+        <Route path="/" element={<PrivateRoute><PrivateLayout /></PrivateRoute>} >
+          <Route path='/home' element={<HomePage />} />
+          <Route path='/employee' element={<EmployeeListPage />} />
+          <Route path='/employee/:id' element={<EmployeePage />} />
+        </Route>
+
       </Routes>
-    </Router>
+    </Router >
   )
 }
 

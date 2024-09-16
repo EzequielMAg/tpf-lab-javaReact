@@ -1,11 +1,12 @@
+import { Outlet } from 'react-router-dom';
 import { NavBar } from '../../shared';
 import styles from './PrivateLayout.module.css';
 
-const PrivateLayout = ({ children }) => {
+const PrivateLayout = () => {
 	return (
 		<div className={styles['private-layout']}>
 			<NavBar />
-			<main>{ children }</main>
+			<main><Outlet /></main>
 			<footer></footer>
  		</div>
 	);

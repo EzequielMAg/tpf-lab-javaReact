@@ -1,0 +1,12 @@
+.btn { 
+	border: none;
+	color: white;
+	text-decoration: none;
+	padding: 0.8rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: var(--tertiary-color);
+	width: 100%;
+	cursor: pointer;
+}

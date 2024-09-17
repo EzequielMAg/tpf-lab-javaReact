@@ -5,7 +5,7 @@ import { ThemeToggleButton } from '../../components';
 
 const NavBar = () => {
 
-  const { isLoggedIn } = useAuth();
+  const { logout } = useAuth();
  
   const isActive = ({ isActive }) => isActive ? styles.active : '';
 
@@ -22,25 +22,11 @@ const NavBar = () => {
         <NavLink to='/app/contact' className={ isActive }>Contact</NavLink>
         <NavLink to='/app/employee' className={ isActive }>Employees</NavLink>
 
-        <ThemeToggleButton />
+        <div className={styles['theme-toggle']}>
+          <ThemeToggleButton />
+        </div>
 
-        {/* {if(isLoggedIn) {
-            
-          } else {
-
-          }} */}
-
-        {/* <ng-container *ngIf="!userLoggedIn; else isLoggedIn">
-        <a routerLink="/auth/login" routerLinkActive="active">Log In</a>
-        <a routerLink="/auth/register" routerLinkActive="active">Register</a>
-        </ng-container>
-      
-        <ng-template #isLoggedIn>
-        <a routerLink="/orders" routerLinkActive="active">Orders</a>
-      
-        <a (click)="logOut()">Log Out</a>
-        </ng-template> */}
-
+        <NavLink to='/' onClick={ logout }>Logout</NavLink>
       </nav>
     </header>
 

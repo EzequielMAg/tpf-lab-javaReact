@@ -61,3 +61,15 @@ header img {
 .nav-links a.active::before {
   transform: scaleX(1);
 }
+
+.theme-toggle {
+  padding: 0 15px;
+}
+
+.theme-toggle::before {
+  left: -5px; 
+}
+
+.theme-toggle::after {
+  right: -5px;
+}

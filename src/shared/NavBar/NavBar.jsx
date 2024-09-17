@@ -20,7 +20,7 @@ const NavBar = () => {
       <nav className={ styles['nav-links'] } >
         <NavLink to='/app/home' className={ isActive } >Home</NavLink>
         <NavLink to='/app/contact' className={ isActive }>Contact</NavLink>
-        <NavLink to='/app/employee' className={ isActive }>Employees</NavLink>
+        <NavLink to='/app/employee' className={ isActive } end>Employees</NavLink>
 
         <div className={styles['theme-toggle']}>
           <ThemeToggleButton />

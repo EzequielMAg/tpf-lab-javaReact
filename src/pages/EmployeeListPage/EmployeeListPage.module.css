@@ -1,3 +1,49 @@
 .employeelistpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title {
+  margin-top: 3rem;
+}
+
+.table {
+  border-collapse: collapse;
+  margin-top: 2rem;
+  color: var(--font-color);	
+	/* color: var(--font-color); */
+  width: 80%; 
+  margin: 20px auto;
   
 }
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: var(--table-header-color); /* Color del encabezado */
+  color: white;
+}
+
+.rowDark {
+  background-color: var(--par-row-color); 
+}
+
+.rowLight {
+  background-color: var(--odd-row-color);
+}
+
+tr:hover {
+  background-color: var(--selector-color); 
+}
+
+.dateColumn {
+  text-align: center;
+}
+

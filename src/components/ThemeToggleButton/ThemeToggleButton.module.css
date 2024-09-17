@@ -21,7 +21,6 @@
   transition: transform 0.25s ease;
   transform: translateX(0); 
   background-color: white;
-  box-shadow: var(--vp-shadow-1);
 }
 
 /* Estilo para el icono del switch */

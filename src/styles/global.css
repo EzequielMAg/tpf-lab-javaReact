@@ -1,18 +1,28 @@
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 html {
-  background-color: var(--primary-color);
-  color: white;
+	background-color: var(--primary-color);
+	color: white;
 }
 
 .dark {
 	--background-color: var(--primary-color);
 	--font-color: white;
+	
+	--table-header-color: var(--dark-table-header-color);
+	--par-row-color: var(--dark-par-row-color);
+	--odd-row-color: var(--dark-odd-row-color);
+	--selector-color: var(--dark-selector-color);
 }
 
 .light {
 	--background-color: var(--quaternary-color);
 	--font-color: black;
+
+	--table-header-color: var(--light-table-header-color);
+	--par-row-color: var(--light-par-row-color);
+	--odd-row-color: var(--light-odd-row-color);
+	--selector-color: var(--light-selector-color);
 }

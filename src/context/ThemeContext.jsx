@@ -9,7 +9,7 @@ export const useTheme = () => useContext(ThemeContext);
 // Proveedor del contexto del tema
 const ThemeProvider = ({ children }) => {
 
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));

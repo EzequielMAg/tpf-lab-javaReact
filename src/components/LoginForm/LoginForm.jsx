@@ -44,10 +44,6 @@ const LoginForm = ({ isLoading, handleSubmit, formState, onInputChange, error })
           </div>
 
           <button type="submit" className={ styles.btn }>Iniciar sesión</button>
-
-          <div className={ styles['open-account'] }>
-            <p>¿No tiene una cuenta? <a /* routerLink="/auth/register" */> Registrate </a></p>
-          </div>
         </div>
       </form>
     </div >

@@ -16,11 +16,10 @@ const LoginPage = () => {
     // SIMULANDO PETICION A UN SERVIDORx
     await login();
 
-    navigate('/home');
+    navigate('/app/home');
   }
 
-  if(isLoggedIn) return <Navigate to='/home' />
-
+  if(isLoggedIn) return <Navigate to='/app/home' />
 
   return (
     <LoginForm 

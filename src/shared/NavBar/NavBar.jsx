@@ -16,9 +16,9 @@ const NavBar = ({ }) => {
 			</div>
 
 			<nav className={ styles['nav-links'] }>
-          <NavLink to='/home' className={ isActive } >Home</NavLink>
-          <NavLink to='/contact' className={ isActive }>Contact</NavLink>
-          <NavLink to='/employee' className={ isActive }>Employee</NavLink>
+          <NavLink to='/app/home' className={ isActive } >Home</NavLink>
+          <NavLink to='/app/contact' className={ isActive }>Contact</NavLink>
+          <NavLink to='/app/employee' className={ isActive }>Employees</NavLink>
 
           {/* {if(isLoggedIn) {
             

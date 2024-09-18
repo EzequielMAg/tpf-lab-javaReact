@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom';
 import { NavBar } from '../../shared';
 import styles from './PrivateLayout.module.css';
 import { useTheme } from '../../context';
+import Footer from '../../shared/Footer/Footer';
 
 const PrivateLayout = () => {
 
@@ -13,7 +14,7 @@ const PrivateLayout = () => {
 			<main>
 				<Outlet />
 			</main>
-			<footer></footer>
+			<Footer />
  		</div>
 	);
 };

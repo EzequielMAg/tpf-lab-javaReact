@@ -54,7 +54,6 @@ const EmployeeListPage = ({ }) => {
 									className={`${styles.button} ${styles.moreInfoButton}`} >
 									<i className={`${['fa-regular']} ${['fa-user']}`} />
 								</button>
-								{deleteError && <p className={styles.error}>{deleteError}</p>}
 							</td>
 						</tr>
 					))}

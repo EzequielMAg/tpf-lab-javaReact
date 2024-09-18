@@ -12,9 +12,9 @@ const NavBar = () => {
   return (
     <header className={ styles['nav-bar'] }>
       <div>
-        <a className={ styles['page-logo'] } href="">LOGO
-          {/* <img src="" alt="Logo de la página" href="" /> */}
-        </a>
+        {/* <a className={ styles['page-logo'] } href="">LOGO
+          <img src="" alt="Logo de la página" href="" />
+        </a> */}
       </div>
 
       <nav className={ styles['nav-links'] } >

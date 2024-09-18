@@ -1,0 +1,256 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "email": "ezequiel.m.aguilar@gmail.com",
+      "password": "adm123"
+    },
+    {
+      "id": 2,
+      "email": "adrian@gmail.com",
+      "password": "adm123"
+    }
+  ],
+  "employee": [
+    {
+      "id": 1,
+      "documentNumber": "41068807",
+      "name": "Ezequiel",
+      "lastName": "Mamani Aguilar",
+      "email": "ezequiel.m.aguilar@gmail.com",
+      "birthDate": "1998-03-20",
+      "entryDate": "2023-09-03",
+      "creationDate": "2024-09-16",
+      "department": "IT",
+      "position": "FullStack Developer"
+    },
+    {
+      "id": 2,
+      "documentNumber": "12345678",
+      "name": "Adrian Mateo",
+      "lastName": "Mamani",
+      "email": "adrian@gmail.com",
+      "birthDate": "2004-04-04",
+      "entryDate": "2023-09-03",
+      "creationDate": "2024-09-16",
+      "department": "IT",
+      "position": "Backend Developer"
+    },
+    {
+      "id": 3,
+      "documentNumber": "12345679",
+      "name": "Omar",
+      "lastName": "Mamani",
+      "email": "omar@gmail.com",
+      "birthDate": "2004-04-04",
+      "entryDate": "2023-09-03",
+      "creationDate": "2024-09-16",
+      "department": "IT",
+      "position": "Database Administrator"
+    },
+    {
+      "id": 4,
+      "documentNumber": "23456780",
+      "name": "Ana Laura",
+      "lastName": "Gonzalez",
+      "email": "ana.gonzalez@gmail.com",
+      "birthDate": "1990-06-15",
+      "entryDate": "2024-01-10",
+      "creationDate": "2024-09-16",
+      "department": "HR",
+      "position": "HR Recruiter"
+    },
+    {
+      "id": 5,
+      "documentNumber": "34567891",
+      "name": "Luis Miguel",
+      "lastName": "Ramos",
+      "email": "luis.ramos@gmail.com",
+      "birthDate": "1985-11-22",
+      "entryDate": "2023-12-01",
+      "creationDate": "2024-09-16",
+      "department": "Finance",
+      "position": "Financial Analyst"
+    },
+    {
+      "id": 6,
+      "documentNumber": "45678902",
+      "name": "Mariana",
+      "lastName": "Santos",
+      "email": "mariana.santos@gmail.com",
+      "birthDate": "1992-05-30",
+      "entryDate": "2024-02-15",
+      "creationDate": "2024-09-16",
+      "department": "Legal",
+      "position": "Legal Advisor"
+    },
+    {
+      "id": 7,
+      "documentNumber": "56789013",
+      "name": "Carlos",
+      "lastName": "Perez",
+      "email": "carlos.perez@gmail.com",
+      "birthDate": "1988-07-20",
+      "entryDate": "2024-03-25",
+      "creationDate": "2024-09-16",
+      "department": "IT",
+      "position": "Systems Architect"
+    },
+    {
+      "id": 8,
+      "documentNumber": "67890124",
+      "name": "Fernanda",
+      "lastName": "Martinez",
+      "email": "fernanda.martinez@gmail.com",
+      "birthDate": "1995-01-12",
+      "entryDate": "2023-11-05",
+      "creationDate": "2024-09-16",
+      "department": "IT",
+      "position": "Scrum Master"
+    },
+    {
+      "id": 9,
+      "documentNumber": "78901235",
+      "name": "Diego",
+      "lastName": "Fernandez",
+      "email": "diego.fernandez@gmail.com",
+      "birthDate": "1983-08-28",
+      "entryDate": "2023-10-20",
+      "creationDate": "2024-09-16",
+      "department": "IT",
+      "position": "UI/UX Designer"
+    },
+    {
+      "id": 10,
+      "documentNumber": "89012346",
+      "name": "Paola",
+      "lastName": "Jimenez",
+      "email": "paola.jimenez@gmail.com",
+      "birthDate": "1997-02-14",
+      "entryDate": "2024-03-01",
+      "creationDate": "2024-09-16",
+      "department": "Marketing",
+      "position": "Marketing Specialist"
+    },
+    {
+      "id": 11,
+      "documentNumber": "90123457",
+      "name": "Juan",
+      "lastName": "Guzman",
+      "email": "juan.guzman@gmail.com",
+      "birthDate": "1989-09-17",
+      "entryDate": "2024-04-15",
+      "creationDate": "2024-09-16",
+      "department": "Finance",
+      "position": "Accounting Manager"
+    },
+    {
+      "id": 12,
+      "documentNumber": "01234568",
+      "name": "Natalia",
+      "lastName": "Rivera",
+      "email": "natalia.rivera@gmail.com",
+      "birthDate": "1991-12-05",
+      "entryDate": "2023-11-01",
+      "creationDate": "2024-09-16",
+      "department": "HR",
+      "position": "HR Manager"
+    },
+    {
+      "id": 13,
+      "documentNumber": "12345680",
+      "name": "Gabriel",
+      "lastName": "Morales",
+      "email": "gabriel.morales@gmail.com",
+      "birthDate": "1986-03-22",
+      "entryDate": "2024-05-01",
+      "creationDate": "2024-09-16",
+      "department": "IT",
+      "position": "DevOps Engineer"
+    },
+    {
+      "id": 14,
+      "documentNumber": "23456791",
+      "name": "Laura",
+      "lastName": "Hernandez",
+      "email": "laura.hernandez@gmail.com",
+      "birthDate": "1994-07-10",
+      "entryDate": "2024-06-15",
+      "creationDate": "2024-09-16",
+      "department": "Legal",
+      "position": "Compliance Officer"
+    },
+    {
+      "id": 15,
+      "documentNumber": "34567892",
+      "name": "Santiago",
+      "lastName": "Cruz",
+      "email": "santiago.cruz@gmail.com",
+      "birthDate": "1990-11-20",
+      "entryDate": "2024-07-01",
+      "creationDate": "2024-09-16",
+      "department": "IT",
+      "position": "Software Engineer"
+    },
+    {
+      "id": 16,
+      "documentNumber": "45678903",
+      "name": "Valeria",
+      "lastName": "Vasquez",
+      "email": "valeria.vasquez@gmail.com",
+      "birthDate": "1993-04-08",
+      "entryDate": "2023-12-15",
+      "creationDate": "2024-09-16",
+      "department": "Marketing",
+      "position": "Content Creator"
+    },
+    {
+      "id": 17,
+      "documentNumber": "56789014",
+      "name": "Rafael",
+      "lastName": "Ortiz",
+      "email": "rafael.ortiz@gmail.com",
+      "birthDate": "1987-10-10",
+      "entryDate": "2024-08-01",
+      "creationDate": "2024-09-16",
+      "department": "Finance",
+      "position": "Finance Director"
+    },
+    {
+      "id": 18,
+      "documentNumber": "67890125",
+      "name": "Camila",
+      "lastName": "García",
+      "email": "camila.garcia@gmail.com",
+      "birthDate": "1996-12-25",
+      "entryDate": "2024-09-01",
+      "creationDate": "2024-09-16",
+      "department": "HR",
+      "position": "HR Specialist"
+    },
+    {
+      "id": 19,
+      "documentNumber": "78901236",
+      "name": "Martín",
+      "lastName": "Lopez",
+      "email": "martin.lopez@gmail.com",
+      "birthDate": "1992-02-28",
+      "entryDate": "2024-01-15",
+      "creationDate": "2024-09-16",
+      "department": "Legal",
+      "position": "Legal Advisor"
+    },
+    {
+      "id": 20,
+      "documentNumber": "89012347",
+      "name": "Mónica",
+      "lastName": "Moreno",
+      "email": "monica.moreno@gmail.com",
+      "birthDate": "1998-05-17",
+      "entryDate": "2024-02-01",
+      "creationDate": "2024-09-16",
+      "department": "IT",
+      "position": "Frontend Developer"
+    }
+  ]
+}

@@ -15,7 +15,7 @@
   margin-top: 2rem;
   color: var(--font-color);	
 	/* color: var(--font-color); */
-  width: 80%; 
+  width: 70%; 
   margin: 20px auto;
   
 }
@@ -43,7 +43,52 @@ tr:hover {
   background-color: var(--selector-color); 
 }
 
-.dateColumn {
+.center-horizontally {
   text-align: center;
 }
 
+/* ------------------ */
+/* General button styles */
+.button {
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Edit button styles (yellow) */
+.editButton {
+  background-color: rgb(230, 230, 98);
+  color: black;
+}
+
+.editButton:hover {
+  background-color: rgb(255, 229, 79);
+}
+
+/* Delete button styles (red) */
+.deleteButton {
+  background-color: rgb(241, 48, 48);
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: darkred;
+}
+
+/* +Info button styles (green) */
+.moreInfoButton {
+  background-color: rgb(30, 146, 30);
+  color: white;
+}
+
+.moreInfoButton:hover {
+  background-color: rgb(1, 95, 1);
+}
+
+/* Align the icon inside the button */
+.button i {
+  font-size: 18px;
+}

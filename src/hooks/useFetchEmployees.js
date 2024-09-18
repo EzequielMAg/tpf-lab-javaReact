@@ -8,7 +8,7 @@ const useFetchEmployees = () => {
 
   const getEmployeesList = async () => {
     try {
-      const employeesList = await getEmployees(); 
+      const employeesList = await getEmployees();
       setEmployees(employeesList);
     } catch (err) {
       setError(err.message); // Capturamos el error lanzado desde getEmployees
@@ -17,6 +17,13 @@ const useFetchEmployees = () => {
     }
   };
 
+  // Función para refetch
+  const updateEmployees = async () => {
+    setIsLoading(true);
+    await getEmployeesList();
+  };
+
+
   useEffect(() => {
     getEmployeesList();
   }, []);
@@ -24,7 +31,8 @@ const useFetchEmployees = () => {
   return {
     employees,
     isLoading,
-    error
+    error,
+    updateEmployees
   };
 };
 
